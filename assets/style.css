@@ -1,0 +1,141 @@
+/*
+Theme Name: Remecconn
+Theme URI: http://remecconn.co.id/
+Description: Thema khusus hasil editan Gallan Probo Widyanto untuk CV. Remecconn Gemilang Perkasa
+Author: Gallan Probo Widyanto
+Author URI: -
+Version: 1.0
+Tags: responsive, white, bootstrap
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@font-face {
+    font-family: 'pt-sans';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+         url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('fonts/glyphicons-halflings-regular.svg#pt_sans_captionbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* { margin: 0; padding: 0; outline: 0; }
+.wrapper { margin: 0 auto; }
+.container { box-shadow: 0px 0px 5px rgba(0,0,0,0.7); width: 84%; }
+h1 { font-size:200%; }
+h2 { font-size:180%; }
+h3 { font-size:160%; }
+h4 { font-size:140%; }
+h5 { font-size:120%; }
+h6 { font-size:100%; }
+
+/* ---------------------------------------------- Carousel ------------------------------------- */
+.carousel-inner { background: url('img/header.png'); border: 0px solid red; height: 530px; width: 100%; }
+.carousel-inner .item img{ /*left: 572px;*/ height: 313px; position: relative; width: 62%; top: 140px; z-index: 3; }
+.carousel-caption { /*background-color:rgba(0,0,0,0.6);*/ bottom:0; height:auto; left:28%; line-height: 25px; position: relative; text-align: justify; top: 150px; width:65%; z-index:10; }
+.carousel-caption p { border-top: 2px solid #363636; padding: 10px 0px; }
+.carousel-control.left { border: 0px solid yellow; }
+.carousel-control.right { border: 0px solid green; }
+.carousel-indicators { bottom:0; }
+
+/* ---------------------------------------------- Navigation ------------------------------------- */
+.navbar .container { box-shadow: 0px -10px 9px rgba(0,0,0,0.7); }
+.navbar { min-height: 75px; margin-bottom: 20px; border: 1px solid transparent; }
+.dropdown-menu { background-color: #080808; }
+.dropdown-menu > li > a { color: #fff; }
+.navbar-inverse { border: 0px solid yellow; }
+.navbar-inverse .navbar-nav > li > a { color: #fff; font-family: Arial,Helvetica,Verdana,serif; font-size: 16px; height: 70px; padding-top: 30px; width: 100%; }
+.navbar-inverse .navbar-nav > li > a:hover { background: #535353; color: snow; }
+.navbar-nav { /*height: 225px; border: 1px solid blue;*/ }
+.dropdown:hover .dropdown-menu { display: block; }
+
+/* ---------------------------------------------- Content ------------------------------------- */
+.container > .row { margin: 50px 0px; }
+.container > .row > .col-lg-4 { text-align: center; }
+.container > .row > .col-lg-4 > a img { height: 140px; width: 140px; }
+
+/*.container .row .col-lg-4 { border: 1px solid red; }*/
+.container .row .col-lg-4 .gambar { border:3px solid grey; height:auto; margin:15px; width:83%; text-align:center; }
+.container .row .col-lg-4 .gambar img { border:1px solid #ffffff; display:inline; height:18em; margin:0px; opacity:0.6; width:100% }
+.container .row .col-lg-4 .gambar a:hover img { border:1px solid #000000; opacity:1; }
+.container .row .col-lg-4 .teks { color:black; display:inline-block; font-family:Arial,Helvetica,Verdana, serif; font-size:1.2em; font-weight:normal; margin:0 auto; text-align:center; width:200px; }
+
+.container .row .gallery { padding:10px; background: url(img/images/white_carbonfiber.png); border-radius:15px; }
+.container .row .gallery ul { list-style-type:none; }
+.container .row .gallery ul li { display:inline-block; padding:5px; margin:8px; }
+.container .row .gallery ul li img:hover { opacity:0.8; }
+.container .row .video { padding:10px; background: url(img/images/white_carbonfiber.png); border-radius:15px; }
+.container .row .video ul { list-style-type:none; }
+.container .row .video ul li { display:inline; padding:5px; margin:8px; }
+.container .row .video ul li video { height: 30%; width: 30%; }
+
+.container .row h3 { text-align: center; }
+.container .row section { background: url(img/section.png) no-repeat center bottom; padding-bottom: 50px; margin-bottom: 20px; }
+.container .row .post { padding-left: 32px; padding-right: 32px; }
+.container .row .post img { float: left; margin-right: 18px; height: 24em; width: 34%; }
+.container .row .post-cnt { padding-top: 22px; }
+.container .row .post-cnt p { padding-bottom: 10px; }
+
+/* ---------------------------------------------- Scroll Back to Top ------------------------------------- */
+.pageup {position:fixed; right:20px; bottom:60px; width:48px; height:48px; background-image:url('img/up.png'); background-repeat:no-repeat; background-size:48px 48px; display:none; cursor:pointer;}
+
+/* ---------------------------------------------- Footer ------------------------------------- */
+footer { background: url(img/footer.png); border: 0px solid red; height:auto; width:100%; }
+footer .container { background: url(img/footer-shell.png) repeat 0 0; box-shadow: 0px 0px 5px rgba(0,0,0,0.7); }
+footer .footer-content { color: #e1e1e1; }
+footer .footer-content .kanan { border: 0px solid blue; color: #e1e1e1; padding-left: 210px; }
+footer .footer-content ul li { margin: auto 3%; }
+footer .copyright { border-top: 2px solid #363636; color: #e1e1e1; text-align: center; margin: 250px 0px 10px 0px; }
+
+/*--------------- Tablet Portrait to landscape for Ipad, Samsung Galaxy Tab, notebook 10 and 11 inch ---------------*/
+@media only screen and (min-width : 481px) and (max-width : 1152px)
+    {
+        .carousel-caption { top: 130px; }
+        .carousel-inner .item img { height: 100%; left: 0px; position: relative; top: 150px; width: 72%; }
+        
+        .container .row .col-lg-4 .gambar { height:auto; margin:20px; width:90%; }
+        .container .row .col-lg-4 .gambar img { height:15em; margin:0px; width:33%; }
+        .container .row .col-lg-4 .teks { width:17em; }
+        
+        .container .row .post img { height: 21.5em; width: 43%; }
+        
+        .dropdown-menu > li > a { width: 100%; }
+        .navbar-brand > img { border: 0px solid yellow; height: auto; width: 170px; }
+        .navbar-inverse .navbar-nav > li > a { color: #fff; height: auto; border: 0px solid green; padding-top: 20px; }
+        .navbar-nav { height: 65px; position: relative; top: 15px; }
+        
+        footer .footer-content { text-align: center; }
+        footer .footer-content .kanan { border: 0px solid blue; padding-left: 0px; text-align: center; }
+        footer .copyright { border-top: 2px solid #363636; margin-top:30px; }
+    }
+
+/*--------------- Mobile Portrait to landscape for Iphone and Samsung Galaxy ---------------*/
+@media only screen and (min-width : 240px) and (max-width : 480px)
+    {
+        .carousel-caption { border: 0px solid red; top: 300px; left: -90px; /*margin-right: 45px;*/ position: absolute; text-align: center; width: 345%; z-index:5; }
+        .carousel-caption h1 { font-size: 18px; }
+        .carousel-caption p { display: none; }
+        .carousel-indicators { margin-bottom: 0px; }
+        .carousel-inner { height:480px; width:100%; }
+        .carousel-inner .item { border: 0px solid blue; height:480px; left: 110px; position: relative; width:50%; }
+        .carousel-inner .item img { height: 225px; left: -110px; position: relative; top: 100px; width: 220%; }
+        .btn.btn-sm.btn-primary { max-left: 5px; position: relative; }
+        
+        .container .row .col-lg-4 .gambar { height:auto; margin:20px; width:82%; }
+        .container .row .col-lg-4 .gambar img { height:11em; margin:0px; width:11em }
+        .container .row .col-lg-4 .teks { width:150px; }
+        
+        .container .row .post img { margin-right: 0px; height: 16.5em; width: 98%; }
+        
+        .dropdown-menu > li > a { width: 230px; }
+        .navbar-brand > img { height: auto; width: 140px; }
+        .navbar-collapse { position: relative; top: 20px; }
+        .navbar-inverse .navbar-nav > li > a { color: #fff; height: 42px; border: 0px solid red; padding-top: 15px; }
+        .navbar-nav { height: 225px; }
+        
+        footer .footer-content { text-align: left; }
+        footer .footer-content .kanan { padding-left: 12px; text-align: left; }
+        footer .footer-content ul li { margin: auto 13px; }
+        footer .copyright { border-top: 2px solid #363636; margin-top:30px; }
+    }
