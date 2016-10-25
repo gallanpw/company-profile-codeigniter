@@ -1,0 +1,26 @@
+user-agent: *
+allow: /assets/style.css
+disallow: /classes/
+disallow: /captcha/
+disallow: /admin/
+disallow: /application/cache/ 		/* this is for codeigniter */
+disallow: /application/config/ 		/* this is for codeigniter */
+disallow: /application/controllers/ 	/* this is for codeigniter */
+disallow: /application/core/ 		/* this is for codeigniter */
+disallow: /application/helpers/ 	/* this is for codeigniter */
+disallow: /application/hooks/ 		/* this is for codeigniter */
+disallow: /application/language/ 	/* this is for codeigniter */
+disallow: /application/libraries/	/* this is for codeigniter */
+disallow: /application/logs/		/* this is for codeigniter */
+disallow: /application/models/ 		/* this is for codeigniter */
+disallow: /application/third_party/ 	/* this is for codeigniter */
+disallow: /application/views/ 		/* this is for codeigniter */
+disallow: /assets/ 			/* this is for codeigniter */
+disallow: /system/ 			/* this is for codeigniter */
+disallow: /user_guide/ 			/* this is for codeigniter */
+
+User-agent: Googlebot-Image
+Disallow:
+Allow: /*
+
+Sitemap: http://remecconn.co.id/sitemap.xml
